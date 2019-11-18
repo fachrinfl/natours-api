@@ -8425,7 +8425,7 @@ var bookTour = function bookTour(tourId) {
         case 0:
           _context.prev = 0;
           _context.next = 3;
-          return regeneratorRuntime.awrap((0, _axios.default)("http://localhost:8000/api/v1/bookings/checkout-session/".concat(tourId)));
+          return regeneratorRuntime.awrap((0, _axios.default)("/api/v1/bookings/checkout-session/".concat(tourId)));
 
         case 3:
           session = _context.sent;
@@ -8819,7 +8819,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50025" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49996" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
